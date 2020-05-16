@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hotel Javascript Tulum Suites</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+    <style>
+        label {
+            display: block;
+        }
+
+        footer.page-footer.font-small.blue.pt-4 {
+            background: #7d7442;
+            margin-top: 30px !important;
+            color: #fff;
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+    background-color: #ff2907;
+    border-color: #ff2907;
+    color: #fff !important;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btn-primary:hover {
+    background-color: #ff2907;
+    border-color: #ff2907;
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+
+}
+        .navbar-brand,
+        .jumbotron h1 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .jumbotron  {
+            color: #fff;
+        }
+
+        .jumbotron {
+            background: url(imagenes/imagen1.jpg);
+            background-size: cover;
+        }
+
+        a.navbar-brand {
+            color: #ff2907;
+            font-size: 30px;
+        }
+
+        .galeria-fotos {
+            width: 100%;
+            max-width: 100%;
+        }
+        .grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 300px;
+    margin-bottom: 30px;
+    grid-gap: 2%;
+}
+
+        .item-foto {
+            overflow: hidden;
+        }
+
+        .tabla-container {
+    text-align: center;
+    display: block;
+    width: 524px;
+    margin: 30px auto;
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default " role="navigation">
+        <a class="navbar-brand" href="#">Hotel JS</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="galeria.html">Suites</a>
+            </li>
+  
+            <li>
+                <a href="reservas.html">Reservas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Hotel Javascript</h1>
+            <p>Bienvenido al hotel javascript</p>
+            <p>
+                <a class="btn btn-primary btn-lg">Conozca mas</a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+    <div class="grid">
+        <div class="item-foto">
+            <img src="imagenes/imagen2.jpg">
+        </div>
+        <div class="item-foto">
+
+            <img src="imagenes/imagen2.jpg">
+        </div>
+        <div class="item-foto">
+
+            <img src="imagenes/imagen2.jpg">
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="tabla-container">
+    <table style="text-align:center;" style="width: 524px; height: 158px;" border="1"> <tbody> <tr> <td style="width: 137px;">Habitacion 1</td> <td style="width: 120px;">Habitacion 2</td> <td style="width: 115px;">Habitacion 3</td> <td style="width: 124px;">Habitacion 4</td> </tr> <tr> <td style="width: 137px;">&nbsp;Cama Doble</td> <td style="width: 120px;">&nbsp;Cama Doble y una cama Simple</td> <td style="width: 115px;">&nbsp;Dos camas Dobles</td> <td style="width: 124px;">&nbsp;Cama Doble</td> </tr> <tr> <td style="width: 137px;">&nbsp;Desayuno Incluido</td> <td style="width: 120px;">&nbsp;Sin Desayuno</td> <td style="width: 115px;">&nbsp;Desayuno Incluido</td> <td style="width: 124px;">&nbsp;Jacuzzi y Desayuno Incluido</td> </tr> </tbody> </table>
+</div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 ">
+                <h2>El mejor hotel de Tulum</h2>
+
+                <p>Javascript Hotel, es lo que estás buscando para tu descanso en México. Hotel, Private. Descubre nuestros servicios de restaurant, Healing Sanctuary con encanto agreste y natural. 
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-6 ">
+                <h2>Bienvenido al paraiso</h2>
+
+                <p>Javascript Hotel, es lo que estás buscando para tu descanso en México. Hotel, Private. Descubre nuestros servicios de restaurant, Healing Sanctuary con encanto agreste y natural. 
+                </p>
+            </div>
+            <div class="col-sm-12">
+                <h2>La mejor conexion wifi</h2>
+
+                <p>Javascript Hotel, es lo que estás buscando para tu descanso en México. Hotel, Private. Descubre nuestros servicios de restaurant, Healing Sanctuary con encanto agreste y natural. 
+
+            </div>
+            <div class="col-sm-4">
+                <legend>Contacto</legend>
+
+                <form id="formulario" onsubmit="return mensajeValidado()">
+
+                    <label>Ingrese su nombre y apellido </label> <br>
+                        <input id="nombre" required type="text" name="nombre" placeholder="tu nombre"> </input>
+                   
+
+                    <label>Ingrese su telefono  </label><br>
+                        <input id="numero" required type="number" name="telefono" placeholder="escribi tu telefono">
+                        </input>
+             
+                    <label>Ingrese su email </label> <br>
+                        <input id="email" required type="email" name="email" placeholder="escribi tu email"> </input>
+                
+                    <label>Ingrese su mensaje </label> <br>
+                        <textarea id="mensaje" name="message" placeholder="escribi tu mensaje">  </textarea>
+                
+
+                    <label>Seleccione su Suite </label>
+                    <select id="opciones" required type="select" name=" ">
+                        <option value="limon">Suite 1</option>
+                        <option value="oleo31">Suite 2 </option>
+                        <option value="rosa">Suite 3</option>
+                        <option value="rosa">Suite 4</option>
+
+                    </select>
+
+                    <label>Seleccione su fecha de llegada </label>
+                    <input type="date" id="inicio" name="inicio-viaje"
+                    value=""min="2020-05-14" max="2050-12-31">
+
+
+                    <label>Cochera </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" required name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Quiero cochera</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">No quiero</label>
+                      </div>
+            
+                    <input type="submit" value="Reservar" class="btn btn-large btn-block btn-primary"></button>
+
+
+                </form>
+
+                <script>
+                    function mensajeValidado() {
+                        event.preventDefault()
+
+                        var name = document.forms["formulario"]["nombre"].value;
+
+                        var x = document.getElementById("opciones").selectedIndex;
+                        var y = document.getElementById("opciones").options;
+
+                        alert("gracias " + name +
+                            " su informacion fue enviada, gracias por su reserva de su lujosa " + y[x]
+                            .text);
+                        return false;
+
+                    }
+                </script>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <p>Hotel JS 2020.</p>
+
+                </div>
+                <!-- Grid column -->
+                <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Reservas - Hotel Javascript Tulum Suites</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default " role="navigation">
+        <a class="navbar-brand" href="#">Hotel JS</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="galeria.html">Suites</a>
+            </li>
+  
+            <li>
+                <a href="reservas.html">Reservas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Reserva tu lugar en el paraiso</h1>
+            <p>El mejor wifi de tulum</p>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+
+                <h2>Contacto</h2>
+
+                <form id="formulario" onsubmit="return mensajeValidado()">
+
+                    <label>Ingrese su nombre y apellido </label> <br>
+                        <input id="nombre" required type="text" name="nombre" placeholder="tu nombre"> </input>
+                   
+
+                    <label>Ingrese su telefono  </label><br>
+                        <input id="numero" required type="number" name="telefono" placeholder="escribi tu telefono">
+                        </input>
+             
+                    <label>Ingrese su email </label> <br>
+                        <input id="email" required type="email" name="email" placeholder="escribi tu email"> </input>
+                
+                    <label>Ingrese su mensaje </label> <br>
+                        <textarea id="mensaje" name="message" placeholder="escribi tu mensaje">  </textarea>
+                
+
+                    <label>Seleccione su Suite </label>
+                    <select id="opciones" required type="select" name=" ">
+                        <option value="limon">Suite 1</option>
+                        <option value="oleo31">Suite 2 </option>
+                        <option value="rosa">Suite 3</option>
+                        <option value="rosa">Suite 4</option>
+
+                    </select>
+
+                    <label>Seleccione su fecha de llegada </label>
+                    <input type="date" id="inicio" name="inicio-viaje"
+                    value=""min="2020-05-14" max="2050-12-31">
+
+
+                    <label>Cochera </label>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" required name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Quiero cochera</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">No quiero</label>
+                      </div>
+            
+                    <input type="submit" value="Reservar" class="btn btn-large btn-block btn-primary"></button>
+
+
+                </form>
+
+                <script>
+                    function mensajeValidado() {
+                        event.preventDefault()
+
+                        var name = document.forms["formulario"]["nombre"].value;
+
+                        var x = document.getElementById("opciones").selectedIndex;
+                        var y = document.getElementById("opciones").options;
+
+                        alert("gracias " + name +
+                            " su informacion fue enviada, gracias por su reserva de su lujosa " + y[x]
+                            .text);
+                        return false;
+
+                    }
+                </script>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <p>Hotel JS 2020.</p>
+
+                </div>
+                <!-- Grid column -->
+                <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html> 
