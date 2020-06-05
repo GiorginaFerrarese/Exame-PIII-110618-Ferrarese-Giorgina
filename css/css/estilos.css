@@ -1,0 +1,83 @@
+label {
+    display: block;
+}
+
+footer.page-footer.font-small.blue.pt-4 {
+    background: #7d7442;
+    margin-top: 30px !important;
+    color: #fff;
+}
+a {
+    color: #7d7442;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn-primary {
+background-color: #7d7442;
+border-color: #7d7442;
+color: #fff !important;
+font-weight: bold;
+transition: all 0.3s ease-in-out;
+
+}
+
+.btn-primary:hover {
+background-color: #7d7442;
+border-color: #7d7442;
+color: #fff !important;
+transition: all 0.3s ease-in-out;
+
+}
+.navbar-brand,
+.jumbotron h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron  {
+    color: #fff;
+}
+
+.jumbotron {
+    background: url(../imagenes/imagen2.jpg);
+    background-size: cover;
+}
+
+a.navbar-brand {
+    color: #ff2907;
+    font-size: 30px;
+}
+
+.galeria-fotos {
+    width: 100%;
+    max-width: 100%;
+}
+.grid {
+display: grid;
+grid-template-columns: 24% 24% 24% 24%;
+margin-bottom: 30px;
+grid-gap: 3%;
+}
+
+.item-foto {
+    overflow: hidden;
+}
+
+.tabla-container {
+text-align: center;
+display: block;
+width: 524px;
+margin: 30px auto;
+}
+
+.grid img{
+width: 100%;
+}
+
+.jumbotron h1, .jumbotron p {
+text-shadow: 10px -21px 61px #111;
+}
